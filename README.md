@@ -1,246 +1,208 @@
-# 🚀 Issue Tracker — Full Stack MERN CRUD Application
+<div align="center">
 
-A modern and scalable **Issue Tracker Application** built using the **MERN Stack**  project.
-This application demonstrates real-world software engineering practices including **authentication, CRUD operations, REST APIs, analytics dashboards, protected routes, filtering, responsive UI, and scalable folder architecture**.
+# 🐞 Issue Tracker
 
-Designed with a clean and professional UI using **React, TypeScript, Tailwind CSS, and Framer Motion**.
+### Full-Stack MERN Issue Management & Analytics Platform
 
----
+A modern issue tracking application built with **React, TypeScript, Node.js, Express, and MongoDB**, featuring secure authentication, full CRUD, analytics dashboards, and a responsive UI.
 
-# 🌟 Project Highlights
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 
-✅ Full Stack MERN Architecture
-✅ JWT Authentication & Protected Routes
-✅ Complete CRUD Functionality
-✅ Analytics Dashboard
-✅ Search, Filter & Pagination
-✅ Responsive Modern UI
-✅ Dark / Light Theme Support
-✅ Reusable Component Architecture
-✅ Production-Level Folder Structure
+🔐 JWT Auth &nbsp;•&nbsp; 📝 Full CRUD &nbsp;•&nbsp; 📊 Analytics Dashboard &nbsp;•&nbsp; 🔎 Search & Filters &nbsp;•&nbsp; 🌙 Dark / ☀️ Light Theme
 
----
-
-# 📌 Assignment Requirements Covered
-
-This project was developed as part of a technical interview assignment.
-
-### Core Functionalities
-
-* Create Issues
-* Read/View Issues
-* Update Issues
-* Delete Issues
-* Authentication System
-* REST API Integration
-* MongoDB Database Integration
-* Issue Status Tracking
-* Search & Filtering
+</div>
 
 ---
 
-# ✨ Features
+## 📑 Table of Contents
 
-## 🔐 Authentication System
-
-* User Registration & Login
-* JWT-based Authentication
-* Password Hashing using bcrypt
-* Protected API Routes
-* Persistent User Sessions
-
----
-
-## 📝 Issue Management
-
-Users can:
-
-* Create new issues
-* Edit issue details
-* Delete issues with confirmation
-* Update issue statuses
-* Search issues by keywords
-* Filter issues by:
-
-  * Status
-  * Priority
-  * Severity
-* Paginate issue lists
-
-### Supported Issue Statuses
-
-* Open
-* In Progress
-* Resolved
-* Closed
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Screenshots](#-screenshots)
+- [Tech Stack](#️-tech-stack)
+- [System Architecture](#️-system-architecture)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Security](#-security)
+- [Known Limitations](#️-known-limitations)
+- [Roadmap](#-roadmap)
+- [Deployment](#-deployment)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
-## 📊 Dashboard & Analytics
+## 📖 Overview
 
-The dashboard provides a visual overview of project issues.
+**Issue Tracker** is a full-stack web application for creating, managing, and analyzing project issues. It was developed as a technical interview assignment and demonstrates real-world engineering practices: authentication, protected routes, REST API design, database integration, data filtering, analytics, and a reusable, component-based frontend written in TypeScript.
 
-### Analytics Includes
+### 🌟 Highlights
 
-* Total Issues Count
-* Open Issues Count
-* Resolved Issues Count
-* Priority Distribution
-* Status Summary Cards
-* Visual Analytics Components
-
----
-
-## 👥 Application Modules
-
-### 🏠 Dashboard
-
-Overview of issue statistics and analytics.
-
-### 📝 Issues Management
-
-Manage and track all issues efficiently.
-
-### 📊 Analytics Page
-
-Visual representation of issue trends and distributions.
-
-### ⚙️ Settings Page
-
-Application preferences and configurations.
-
-### 👤 User Profile Page
-
-Displays authenticated user information.
+- ✅ Full-stack MERN architecture
+- ✅ JWT authentication and protected routes
+- ✅ Complete issue CRUD with status tracking
+- ✅ Search, filtering, and pagination
+- ✅ Analytics dashboard
+- ✅ Responsive UI with dark and light themes
+- ✅ Reusable component architecture and scalable folder structure
 
 ---
 
-# 🎨 UI/UX Features
+## ✨ Key Features
 
-* Fully Responsive Design
-* Modern Dashboard Layout
-* Smooth Page Animations using Framer Motion
-* Clean Sidebar Navigation
-* Reusable UI Components
-* Dark / Light Theme Toggle
-* User-Friendly Experience
+### 🔐 Authentication
+- User registration and login
+- JWT-based authentication
+- Password hashing with bcrypt
+- Protected API and frontend routes
+- Persistent user sessions
+
+### 📝 Issue Management
+- Create, view, edit, and delete issues (with delete confirmation)
+- Update issue status through its lifecycle
+- Search issues by keyword
+- Filter by **status**, **priority**, and **severity**
+- Paginated issue lists
+
+| Supported Statuses |
+|---|
+| 🟢 Open |
+| 🟡 In Progress |
+| 🔵 Resolved |
+| ⚫ Closed |
+
+### 📊 Dashboard & Analytics
+- Total, open, and resolved issue counts
+- Priority distribution
+- Status summary cards
+- Visual analytics components
+
+### 📤 Export
+- Export issues as **CSV**
+- Export issues as **JSON**
+
+### 🎨 UI / UX
+- Fully responsive layout
+- Modern dashboard with sidebar navigation
+- Smooth page animations with Framer Motion
+- Dark / Light theme toggle
+- Reusable UI components
+
+### 👥 Application Modules
+
+| Module | Purpose |
+|---|---|
+| 🏠 **Dashboard** | Overview of issue statistics |
+| 📝 **Issues** | Create, manage, and track issues |
+| 📊 **Analytics** | Visual trends and distributions |
+| ⚙️ **Settings** | Application preferences |
+| 👤 **Profile** | Authenticated user information |
 
 ---
-
-# ⚠️ Known Limitation
-
-> 🔔 The notification system UI has been implemented, but real-time backend integration is still pending.
-> Planned implementation will use **Socket.io** for real-time notifications.
-
----
-
-# 🛠️ Tech Stack
-
-## Frontend
-
-* React.js (Vite)
-* TypeScript
-* Tailwind CSS
-* Axios
-* React Router DOM
-* Framer Motion
-
-## Backend
-
-* Node.js
-* Express.js
-* JWT Authentication
-* bcrypt.js
-
-## Database
-
-* MongoDB
-* Mongoose ODM
-
----
-
 
 ## 📸 Screenshots
 
 ### 🏠 Dashboard
 <p align="center">
-  <img src="frontend/src/screenshots/dashboard.png" width="900" />
+  <img src="frontend/src/screenshots/dashboard.png" alt="Dashboard" width="900" />
+</p>
+
+### 📊 Analytics
+<p align="center">
+  <img src="frontend/src/screenshots/analytics.png" alt="Analytics page" width="900" />
+</p>
+
+### 📝 Issues
+<p align="center">
+  <img src="frontend/src/screenshots/issues.png" alt="Issues page" width="900" />
+</p>
+
+### ⚙️ Settings
+<p align="center">
+  <img src="frontend/src/screenshots/settings.png" alt="Settings page" width="900" />
 </p>
 
 ---
 
-### 📊 Analytics Page
-<p align="center">
-  <img src="frontend/src/screenshots/analytics.png" width="900" />
-</p>
+## 🛠️ Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| **Frontend** | ⚛️ React (Vite) · 🔷 TypeScript · 🎨 Tailwind CSS · 📦 Axios · 🧭 React Router DOM · ✨ Framer Motion |
+| **Backend** | 🟢 Node.js · 🚂 Express.js · 🔑 JWT · 🔒 bcrypt.js |
+| **Database** | 🍃 MongoDB · Mongoose ODM |
 
 ---
 
-### 📝 Issues Page
-<p align="center">
-  <img src="frontend/src/screenshots/issues.png" width="900" />
-</p>
+## 🏗️ System Architecture
+
+```mermaid
+flowchart LR
+    A[👤 User] --> B[⚛️ React + TypeScript Frontend]
+    B -->|REST API + JWT| C[🚂 Express.js Backend]
+    C --> D[🛡️ Auth Middleware]
+    D --> E[📋 Controllers]
+    E --> F[(🍃 MongoDB via Mongoose)]
+```
 
 ---
 
-### ⚙️ Settings Page
-<p align="center">
-  <img src="frontend/src/screenshots/settings.png" width="900" />
-</p>
-
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```bash
 issue-tracker/
-│
 ├── backend/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   └── server.js
+│   ├── controllers/    # Request handling logic
+│   ├── middleware/     # Auth and validation middleware
+│   ├── models/         # Mongoose schemas
+│   ├── routes/         # API routes
+│   ├── utils/          # Helper functions
+│   └── server.js       # Server entry point
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── api/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── hooks/
-│   │   ├── pages/
-│   │   ├── utils/
-│   │   └── App.tsx
+│   └── src/
+│       ├── api/        # Axios API layer
+│       ├── components/ # Reusable UI components
+│       ├── context/    # Global state (auth, theme)
+│       ├── hooks/      # Custom hooks
+│       ├── pages/      # Application pages
+│       ├── utils/      # Helper functions
+│       └── App.tsx
 │
-├── screenshots/
 ├── README.md
 └── package.json
 ```
 
 ---
 
-# ⚙️ Installation & Setup
+## 🚀 Getting Started
 
-## 1️⃣ Clone the Repository
+### Prerequisites
+- Node.js and npm
+- A MongoDB database (local or MongoDB Atlas)
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/DiluTharushika/issue-tracker.git
 cd issue-tracker
 ```
 
----
-
-# 🔧 Backend Setup
-
-## Install Dependencies
+### 2. Set up the backend
 
 ```bash
 cd backend
 npm install
 ```
 
-## Create Environment Variables
-
-Create a `.env` file inside the backend folder:
+Create a `.env` file in the `backend` folder:
 
 ```env
 PORT=5000
@@ -248,94 +210,81 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
-## Run Backend Server
+Start the server:
 
 ```bash
 npm run dev
 ```
 
----
-
-# 💻 Frontend Setup
-
-## Install Dependencies
+### 3. Set up the frontend
 
 ```bash
 cd frontend
 npm install
-```
-
-## Run Frontend
-
-```bash
 npm run dev
 ```
 
----
-
-# 📤 Export Features
-
-The application supports:
-
-* Export Issues as CSV
-* Export Issues as JSON
+> 🔐 Never commit your `.env` file or secrets to GitHub.
 
 ---
 
-# 🔒 Security Features
+## 🔒 Security
 
-* JWT Authentication
-* Password Hashing using bcrypt
-* Protected API Routes
-* Input Validation
-* Secure Environment Variables
-
----
-
-# 🔮 Future Improvements
-
-* 🔔 Real-time Notifications (Socket.io)
-* 💬 Comments & Discussion System
-* 📎 File Upload Support
-* 🧑‍💼 Role-Based Access Control (RBAC)
-* 📊 Advanced Analytics Dashboard
-* 📱 Mobile Application Version
-* 📧 Email Notifications
+- 🔑 JWT authentication
+- 🔒 Password hashing with bcrypt
+- 🛡️ Protected API routes
+- ✅ Input validation
+- 🗝️ Secrets kept in environment variables
 
 ---
 
-# 🧪 API Features
+## ⚠️ Known Limitations
 
-RESTful APIs implemented for:
-
-* Authentication
-* User Management
-* Issue Management
-* Dashboard Analytics
+> 🔔 The notification UI is implemented, but real-time backend integration is still pending. A **Socket.io** implementation is planned.
 
 ---
 
-# 🚀 Deployment
+## 🔮 Roadmap
 
-Frontend and backend can be deployed using:
-
-* Vercel
-* Netlify
-* Render
-* Railway
-* MongoDB Atlas
-
----
-
-# 👨‍💻 Author
-
-## Dilu Tharushika
-
-* GitHub: [DiluTharushika GitHub](https://github.com/DiluTharushika?utm_source=chatgpt.com)
-* LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/dilutharushika/)
+- [ ] 🔔 Real-time notifications (Socket.io)
+- [ ] 💬 Comments and discussion system
+- [ ] 📎 File upload support
+- [ ] 🧑‍💼 Role-based access control (RBAC)
+- [ ] 📊 Advanced analytics dashboard
+- [ ] 📧 Email notifications
+- [ ] 📱 Mobile application version
 
 ---
 
-# 📄 License
+## ☁️ Deployment
 
-This project was created for educational and interview assignment purposes.
+The application can be deployed using:
+
+- ▲ **Vercel** or **Netlify** for the frontend
+- 🚆 **Render** or **Railway** for the backend
+- 🍃 **MongoDB Atlas** for the database
+
+---
+
+## 👨‍💻 Author
+
+**Dilu Tharushika**
+Software Engineer | TypeScript · React · Node.js
+
+[![GitHub](https://img.shields.io/badge/GitHub-DiluTharushika-181717?style=flat&logo=github)](https://github.com/DiluTharushika)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-dilutharushika-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/dilutharushika/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blueviolet?style=flat)](https://dilutharushika.github.io/my-portfolio/)
+
+---
+
+## 📄 License
+
+This project was created for educational and technical interview assignment purposes.
+
+---
+
+<div align="center">
+
+⭐ If you find this project useful, please consider giving it a star! ⭐
+
+</div>
